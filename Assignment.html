@@ -9,6 +9,9 @@
         h1{margin:0;text-align:center;font-size:36px;letter-spacing:1px}
         .role{margin:2px 0 16px;text-align:center;color:#666;font-size:17px}
         .contact{margin:0 0 14px;padding:0 4px 7px;border-bottom:2px solid #666;font-size:16px}
+        .contact-row{display:grid;grid-template-columns:max-content max-content 1fr;column-gap:24px}
+        .contact-item{white-space:nowrap}
+        .contact>.contact-item{margin-top:4px}
         h2{margin:16px 0 8px;padding:0 4px 4px;border-bottom:2px solid #666;font-size:20px;text-transform:uppercase}
         h3{margin:8px 0 1px;font-size:17px}
         p{margin:5px 0}
@@ -21,14 +24,21 @@
         ul{margin:3px 0 0;padding-left:38px}
         li{margin:2px 0}
         .skills{margin-left:4px}
-        @media(max-width:600px){body{padding:15px}.contact{text-align:center;font-size:14px}h1{font-size:32px}ul{padding-left:25px}}
+        @media(max-width:600px){body{padding:15px}.contact{font-size:14px}.contact-row{display:block}.contact-item{margin:3px 0}h1{font-size:32px}ul{padding-left:25px}}
     </style>
 </head>
 <body>
     <header>
         <h1>Talha Yaseen</h1>
         <p class="role">Software Engineer</p>
-        <p class="contact"><strong>Email:</strong> <a href="mailto:yaseen.raza.dev.email@gmail.com">yaseen.raza.dev.email@gmail.com</a> &nbsp; <strong>Phone:</strong> +92 313-7767936 &nbsp; <strong>Location:</strong> Lahore, Pakistan<br><strong>GitHub:</strong> <a href="https://github.com/Talha-Yaseen-Hub">github.com/Talha-Yaseen-Hub</a></p>
+        <div class="contact">
+            <div class="contact-row">
+                <span class="contact-item"><strong>Email:</strong> <a href="mailto:yaseen.raza.dev.email@gmail.com">yaseen.raza.dev.email@gmail.com</a></span>
+                <span class="contact-item"><strong>Phone:</strong> +92 313-7767936</span>
+                <span class="contact-item"><strong>Location:</strong> Lahore, Pakistan</span>
+            </div>
+            <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/Talha-Yaseen-Hub">github.com/Talha-Yaseen-Hub</a></div>
+        </div>
     </header>
 
     <section>
