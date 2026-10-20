@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="editor-container">
+            <h2>Editor</h2>
+            <textarea id="editor" placeholder="Write markdown here..."></textarea>
+        </div>
+
+        <div class="preview-container">
+            <h2>Preview</h2>
+            <div id="preview"></div>
+            <div class="controls-container">
+                <button id="btn-save">Save</button>
+                <button id="btn-present">Present</button>
+                <button id="btn-left" disabled>Left</button>
+                <button id="btn-right" disabled>Right</button>
+                <button id="btn-fullscreen">Fullscreen</button>
+            </div>
+
+            <p id="slide-count">
+                <span id="current-slide">1</span> /
+                <span id="total-slides">1</span>
+            </p>
+        </div>
+    </div>
+
+    <div id="presentation-screen" hidden>
+        <div id="presentation-slide"></div>
+        <div class="controls-container">
+            <button id="present-left" disabled>Left</button>
+            <button id="present-right" disabled>Right</button>
+            <button id="present-fullscreen">Fullscreen</button>
+            <button id="btn-exit-present">Back to Editor</button>
+        </div>
+
+        <p id="presentation-count">
+            <span id="present-current-slide">1</span> /
+            <span id="present-total-slides">1</span>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
