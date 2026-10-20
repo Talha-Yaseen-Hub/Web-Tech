@@ -5,9 +5,10 @@
 - **JavaScript:** Handles slide navigation, preview rendering, keyboard controls, and local storage.
 
 ## Project Structure
-
+```
 webtech-assignment04/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
+```
