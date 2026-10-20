@@ -6,10 +6,8 @@
 
 ## Project Structure
 
-```text
 webtech-assignment04/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-```
