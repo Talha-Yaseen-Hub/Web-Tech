@@ -1,8 +1,8 @@
 ## Technologies Used
 
-- **HTML:** Creates the structure of the application.
-- **CSS:** Styles the editor and preview sections.
-- **JavaScript:** Handles slide navigation, preview rendering, keyboard controls, and local storage.
+- **HTML:**
+- **CSS:**
+- **JavaScript:**
 
 ## Project Structure
 ```
