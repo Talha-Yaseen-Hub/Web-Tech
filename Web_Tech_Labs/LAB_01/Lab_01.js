@@ -118,7 +118,7 @@ function paginateData(items, pageNumber, pageSize=5)
   const data = items.slice(start, start + pageSize);
   return {data, currentPage: pageNumber, pages: page,};
 }
-const allProducts = ["Laptop", "Mouse", "Keyboard", "Monitor",
+const allitems = ["Laptop", "Mouse", "Keyboard", "Monitor",
      "Desk", "Chair", "Webcam", "Headphones",];
-const result = paginateData(allProducts, 1, 4);
+const result = paginateData(allitems, 1, 4);
 console.log(result);
